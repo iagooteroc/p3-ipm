@@ -20,8 +20,16 @@
 
         <div id="wrapper">
 
-        	<div id="sidenav" class="sidenav">
-        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        	<nav>
+        		<ul>
+        			<li class = "boton" onclick="openNav()" aria-hidden="true"> <a href="#"> &#9776;</a></li>
+        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
+        		</ul>
+        	</nav>
+
+        	<div id="sidenav" class="sidenav" role="navigation">
+        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-hidden="true">&times;</a>
+        		<a id = "salto" href="#Tabla" aria-label="Saltar navegación"></a>
         		<a href="calendario.html">Calendario</a>
         		<a href="clasificacion.html">Clasificación</a>
         		<a href="designaciones-arbitrales.html">Árbitros</a>
@@ -30,70 +38,63 @@
         		<a href="plantilla.html">Plantilla</a>
         	</div>
 
-        	<nav>
-        		<ul>
-        			<li class = "boton" onclick="openNav()"> <a href="#"> &#9776;</a></li>
-        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
-        		</ul>
-        	</nav>
-
-    		<section>
+    		<section role="main">
     			<h1>
     				Árbitros
     			</h1>
-	    		<table>
-	    			<caption>Jornada 1 - 17/09/2016</caption>
+	    		<table id="Tabla">
+	    			<caption tabindex="0">Jornada 1 - 17/09/2016</caption>
 
 	    			<tr>
-	    				<th>Fecha</th>
-	    				<th>Hora</th>
-	    				<th>Local</th>
-	    				<th>Visitante</th>
-	    				<th>Árbitro</th>
+	    				<th id="Fecha">Fecha</th>
+	    				<th id="Hora">Hora</th>
+	    				<th id="Local">Local</th>
+	    				<th id="Visitante">Visitante</th>
+	    				<th id="Árbitro">Árbitro</th>
 	    			</tr>
 
 	    			<tr>
-	    				<td>17/10/2016</td>
-	    				<td>21:00</td>
-	    				<td>H.C. BORBOLLA B</td>
-	    				<td>H.C. BORBOLLA A</td>
-	    				<td>MANOLITO GAFOTAS</td>
+	    				<td tabindex="0" aria-describedby="Fecha">14/10/2016</td>
+	    				<td tabindex="0" aria-describedby="Hora">21:00</td>
+	    				<td tabindex="0" aria-describedby="Local">H.C. BORBOLLA B</td>
+	    				<td tabindex="0" aria-describedby="Visitante">H.C. BORBOLLA A</td>
+	    				<td tabindex="0" aria-describedby="Árbitro">MANOLITO GAFOTAS</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>18/10/2016</td>
-	    				<td>21:00</td>
-	    				<td>H.C. RAXOI</td>
-	    				<td>C.H. COMPOSTELA</td>
-	    				<td>VELOCIRRAPTOR</td>
+	    				<td tabindex="0" aria-describedby="Fecha">19/10/2016</td>
+	    				<td tabindex="0" aria-describedby="Hora">21:00</td>
+	    				<td tabindex="0" aria-describedby="Local">H.C. RAXOI</td>
+	    				<td tabindex="0" aria-describedby="Visitante">C.H. COMPOSTELA</td>
+	    				<td tabindex="0" aria-describedby="Árbitro">VELOCIRRAPTOR</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>19/10/2016</td>
-	    				<td>18:00</td>
-	    				<td>H.C. LICEO</td>
-	    				<td>C.H. COMPOSTELA</td>
-	    				<td>TIRANOSAURUS REX</td>
+	    				<td tabindex="0" aria-describedby="Fecha">19/10/2016</td>
+	    				<td tabindex="0" aria-describedby="Hora">23:00</td>
+	    				<td tabindex="0" aria-describedby="Local">H.C. RAXOI</td>
+	    				<td tabindex="0" aria-describedby="Visitante">C.H. COMPOSTELA</td>
+	    				<td tabindex="0" aria-describedby="Árbitro">TIRANOSAURUS REX</td>
 	    			</tr>
 	    		</table>
 
 	    		<table>
-	    			<caption>Jornada 2 - 24/09/2016</caption>
+	    			<caption tabindex="0">Jornada 2 - 24/09/2016</caption>
 
 	    			<tr>
-	    				<th>Fecha</th>
-	    				<th>Hora</th>
-	    				<th>Local</th>
-	    				<th>Visitante</th>
-	    				<th>Árbitro</th>
+	    				<th tabindex="0" aria-describedby="Fecha">Fecha</th>
+	    				<th tabindex="0" aria-describedby="Hora">Hora</th>
+	    				<th tabindex="0" aria-describedby="Local">Local</th>
+	    				<th tabindex="0" aria-describedby="Visitante">Visitante</th>
+	    				<th tabindex="0" aria-describedby="Árbitro">Árbitro</th>
 	    			</tr>
 
 	    			<tr>
-	    				<td>25/10/2016</td>
-	    				<td>21:00</td>
-	    				<td>H.C. RAXOI</td>
-	    				<td>H.C. LICEO</td>
-	    				<td>MANUEL PEREZ</td>
+	    				<td tabindex="0" aria-describedby="Fecha">19/10/2016</td>
+	    				<td tabindex="0" aria-describedby="Hora">21:00</td>
+	    				<td tabindex="0" aria-describedby="Local">H.C. RAXOI</td>
+	    				<td tabindex="0" aria-describedby="Visitante">C.H. COMPOSTELA</td>
+	    				<td tabindex="0" aria-describedby="Árbitro">MANUEL PEREZ</td>
 	    			</tr>
 	    		</table>
 

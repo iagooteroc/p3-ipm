@@ -20,8 +20,16 @@
 
         <div id="wrapper">
 
-        	<div id="sidenav" class="sidenav">
-        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        	<nav>
+        		<ul>
+        			<li class = "boton" onclick="openNav()" aria-hidden="true"> <a href="#"> &#9776;</a></li>
+        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
+        		</ul>
+        	</nav>
+
+        	<div id="sidenav" class="sidenav" role="navigation">
+        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-hidden="true">&times;</a>
+        		<a id = "salto" href="#Tabla" aria-label="Saltar navegación"></a>
         		<a href="calendario.html">Calendario</a>
         		<a href="clasificacion.html">Clasificación</a>
         		<a href="designaciones-arbitrales.html">Árbitros</a>
@@ -30,77 +38,70 @@
         		<a href="plantilla.html">Plantilla</a>
         	</div>
 
-        	<nav>
-        		<ul>
-        			<li class = "boton" onclick="openNav()"> <a href="#"> &#9776;</a></li>
-        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
-        		</ul>
-        	</nav>
-
-    		<section>
+    		<section role="main">
     			<h1>
     				Clasificación
     			</h1>
     			
 	    		
-    			<table>
+    			<table id="Tabla">
 
-	    			<caption>Estadísticas</caption>
+	    			<caption tabindex="0">Estadísticas</caption>
 
 	    			<tr>
-	    				<th>Clas.</th>
-	    				<th>Equipo</th>
-	    				<th>Ptos</th>
-	    				<th>PJ</th>
-	    				<th>PG</th>
-	    				<th>PE</th>
-	    				<th>PP</th>
-	    				<th>GF</th>
-	    				<th>GC</th>
-	    				<th>Gav</th>
-	    				<th>Pen</th>
+	    				<th id="Clasificación">Clas.</th>
+	    				<th id="Equipo">Equipo</th>
+	    				<th id="Puntos">Ptos</th>
+	    				<th id="PJ">PJ</th>
+	    				<th id="PG">PG</th>
+	    				<th id="PE">PE</th>
+	    				<th id="PP">PP</th>
+	    				<th id="GF">GF</th>
+	    				<th id="GC">GC</th>
+	    				<th id="Gav">Gav</th>
+	    				<th id="Pen">Pen</th>
 	    			</tr>
 
 	    			<tr>
-	    				<td>1</td>
-	    				<td>H.C. BORBOLLA B</td>
-	    				<td>30</td>
-	    				<td>11</td>
-	    				<td>10</td>
-	    				<td>0</td>
-	    				<td>1</td>
-	    				<td>95</td>
-	    				<td>28</td>
-	    				<td>67</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Clasificación">1</td>
+	    				<td tabindex="0" aria-describedby="Equipo">H.C. BORBOLLA B</td>
+	    				<td tabindex="0" aria-describedby="Puntos">30</td>
+	    				<td tabindex="0" aria-describedby="PJ">11</td>
+	    				<td tabindex="0" aria-describedby="PG">10</td>
+	    				<td tabindex="0" aria-describedby="PE">0</td>
+	    				<td tabindex="0" aria-describedby="PP">1</td>
+	    				<td tabindex="0" aria-describedby="GF">95</td>
+	    				<td tabindex="0" aria-describedby="GC">28</td>
+	    				<td tabindex="0" aria-describedby="Gav">67</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>2</td>
-	    				<td>H.C. RAXOI</td>
-	    				<td>24</td>
-	    				<td>11</td>
-	    				<td>9</td>
-	    				<td>1</td>
-	    				<td>0</td>
-	    				<td>86</td>
-	    				<td>23</td>
-	    				<td>56</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Clasificación">2</td>
+	    				<td tabindex="0" aria-describedby="Equipo">H.C. RAXOI</td>
+	    				<td tabindex="0" aria-describedby="Puntos">24</td>
+	    				<td tabindex="0" aria-describedby="PJ">11</td>
+	    				<td tabindex="0" aria-describedby="PG">9</td>
+	    				<td tabindex="0" aria-describedby="PE">1</td>
+	    				<td tabindex="0" aria-describedby="PP">0</td>
+	    				<td tabindex="0" aria-describedby="GF">86</td>
+	    				<td tabindex="0" aria-describedby="GC">23</td>
+	    				<td tabindex="0" aria-describedby="Gav">56</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>3</td>
-	    				<td>A.C. ORDENES</td>
-	    				<td>24</td>
-	    				<td>9</td>
-	    				<td>7</td>
-	    				<td>1</td>
-	    				<td>0</td>
-	    				<td>76</td>
-	    				<td>42</td>
-	    				<td>34</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Clasificación">3</td>
+	    				<td tabindex="0" aria-describedby="Equipo">A.C. ORDENES</td>
+	    				<td tabindex="0" aria-describedby="Puntos">24</td>
+	    				<td tabindex="0" aria-describedby="PJ">9</td>
+	    				<td tabindex="0" aria-describedby="PG">7</td>
+	    				<td tabindex="0" aria-describedby="PE">1</td>
+	    				<td tabindex="0" aria-describedby="PP">0</td>
+	    				<td tabindex="0" aria-describedby="GF">76</td>
+	    				<td tabindex="0" aria-describedby="GC">42</td>
+	    				<td tabindex="0" aria-describedby="Gav">34</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
 	    			</tr>
 	    		</table>
 

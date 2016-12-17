@@ -20,8 +20,16 @@
 
         <div id="wrapper">
 
-        	<div id="sidenav" class="sidenav">
-        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        	<nav>
+        		<ul>
+        			<li class = "boton" onclick="openNav()" aria-hidden="true"> <a href="#"> &#9776;</a></li>
+        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
+        		</ul>
+        	</nav>
+
+        	<div id="sidenav" class="sidenav" role="navigation">
+        		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-hidden="true">&times;</a>
+        		<a id = "salto" href="#Tabla" aria-label="Saltar navegación"></a>
         		<a href="calendario.html">Calendario</a>
         		<a href="clasificacion.html">Clasificación</a>
         		<a href="designaciones-arbitrales.html">Árbitros</a>
@@ -30,116 +38,108 @@
         		<a href="plantilla.html">Plantilla</a>
         	</div>
 
-        	<nav>
-        		<ul>
-        			<li class = "boton" onclick="openNav()"> <a href="#"> &#9776;</a></li>
-        			<li class = "titulo"><a href="calendario.html">Federación Galega de Patinaxe</a></li>
-        		</ul>
-        	</nav>
-
-    		<section>
+    		<section role="main">
     			<div class = "title">
     				ESCOLA LUBIÁNS 8 - 3 H.C RAXOI
     			</div>
     			
 	    		
-	    		<table>
-	    			<caption>ESCOLA LUBIÁNS</caption>
+	    		<table id="Tabla">
+	    			<caption tabindex="0">ESCOLA LUBIÁNS</caption>
 
 	    			<tr>
-	    				<th>Nº</th>
-	    				<th>Pos</th>
-	    				<th>Nombre</th>
-	    				<th>G</th>
-	    				<th>Pen</th>
-	    				<th>FD</th>
-	    				<th>F</th>
-	    				<th>F &rarr;</th>
-	    				<th>F &larr;</th>
-	    				<th>TA</th>
-	    				<th>TR</th>
-	    				<th>AS</th>
+	    				<th id="Nº">Nº</th>
+	    				<th id="Pos">Pos</th>
+	    				<th id="Nombre">Nombre</th>
+	    				<th id="G">G</th>
+	    				<th id="Pen">Pen</th>
+	    				<th id="FD">FD</th>
+	    				<th id="F">F</th>
+	    				<th id="Ffuera">F &rarr;</th>
+	    				<th id="Fdentro">F &larr;</th>
+	    				<th id="TA">TA</th>
+	    				<th id="TR">TR</th>
+	    				<th id="AS">AS</th>
 	    			</tr>
 
 	    			<tr>
-	    				<td>05</td>
-	    				<td>&nbsp;</td>
-	    				<td>ALVEDRO BUÑO, ROI</td>
-	    				<td>2</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    					    				
+	    				<td tabindex="0" aria-describedby="Nº">05</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">ALVEDRO BUÑO, ROI</td>
+	    				<td tabindex="0" aria-describedby="G">2</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 
 	    			<tr>
-	    				<td>06</td>
-	    				<td>&nbsp;</td>
-	    				<td>MARTÍNEZ RAMILO, MARCOS</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">06</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">MARTÍNEZ RAMILO, MARCOS</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>08</td>
-	    				<td>&nbsp;</td>
-	    				<td>SEIJO PÉREZ, ALBERTO</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">08</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">SEIJO PÉREZ, ALBERTO</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>10</td>
-	    				<td>&nbsp;</td>
-	    				<td>LAMAS LÓPEZ, JORGE</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">10</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">LAMAS LÓPEZ, JORGE</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>
 	    			</tr>
 
 	    			<tr>
-	    				<td>11</td>
-	    				<td>&nbsp;</td>
-	    				<td>VIEITES PONTE, DIEGO</td>
-	    				<td>1</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">11</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">VIEITES PONTE, DIEGO</td>
+	    				<td tabindex="0" aria-describedby="G">1</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>
 	    			</tr>
 	    		</table>
 
 	    		<table>
-	    			<caption>H.C. RAXOI</caption>
+	    			<caption tabindex="0">H.C. RAXOI</caption>
 
 	    			<tr>
 	    				<th>Nº</th>
@@ -155,90 +155,89 @@
 	    				<th>TR</th>
 	    				<th>AS</th>
 	    			</tr>
-
 	    			<tr>
-	    				<td>01</td>
-	    				<td>&nbsp;</td>
-	    				<td>GARCÍA BECERRA, SERGIO</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">01</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">GARCÍA BECERRA, SERGIO</td>
+	    				<td tabindex="0" aria-describedby="G">2</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    			<tr>
-	    				<td>02</td>
-	    				<td>&nbsp;</td>
-	    				<td>SORIANO LÓPEZ, JOSE MARÍA</td>
-	    				<td>1</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">02</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">SORIANO LÓPEZ, JOSE MARÍA</td>
+	    				<td tabindex="0" aria-describedby="G">1</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    			<tr>
-	    				<td>03</td>
-	    				<td>&nbsp;</td>
-	    				<td>MARQUEZ CAAMAÑO, SAÚL</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">03</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">MARQUEZ CAAMAÑO, SAÚL</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    			<tr>
-	    				<td>04</td>
-	    				<td>&nbsp;</td>
-	    				<td>CALVO FIDALGO, SERGIO</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">04</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">CALVO FIDALGO, SERGIO</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    			<tr>
-	    				<td>05</td>
-	    				<td>&nbsp;</td>
-	    				<td>EIROA RUA, CARLOS</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">05</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">EIROA RUA, CARLOS</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    			<tr>
-	    				<td>06</td>
-	    				<td>&nbsp;</td>
-	    				<td>LEÓN FIGUEIRAS, JOSÉ ANTONIO</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
-	    				<td>&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nº">06</td>
+	    				<td tabindex="0" aria-describedby="Pos">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Nombre">LEÓN FIGUEIRAS, JOSÉ ANTONIO</td>
+	    				<td tabindex="0" aria-describedby="G">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Pen">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="FD">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="F">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Ffuera">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="Fdentro">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TA">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="TR">&nbsp;</td>
+	    				<td tabindex="0" aria-describedby="AS">&nbsp;</td>				
 	    			</tr>
 	    		</table>
 
