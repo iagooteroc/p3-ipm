@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+ }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    margin:0; padding: 0;
+}
+
+div#wrapper{
+    margin:0; padding: 0;
+}
+
+nav {
+    background-color:#08436B;
+    overflow:hidden;
+}
+
+nav ul{
+    list-style: none;
+    font-weight: bold;
+    color:white;
+}
+
+nav ul li{
+    
+    float:left;
+    font-size:100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 0.75em 0.25em;
+}
+
+nav ul li.titulo{
+    width: 92%;
+}
+nav ul li.boton{
+    cursor:pointer;
+    width:8%;
+}
+
+h1 {
+    min-height: 36px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+caption{                
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #08436B;
+    display:block;
+    border-style: solid;
+    border-color: white;  
+    border-width: 2px 2px 0px 2px;
+}
+
+section {
+    width: 95%;
+    background-color: white;
+    padding: 2.5%;
+}
+footer {
+    color: gray;
+    padding: 3em 0;
+    text-align: center;
+}
+th {                 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;            
+}
+table, th, td, tr { 
+    display: block; 
+}
+
+table{
+    border-collapse: collapse;
+}
+tbody{
+    display:block;
+}
+td {
+    padding: 3px;
+    position: relative;
+    padding-left: 50%;  
+    z-index: 3;
+}
+tr:nth-of-type(odd){ 
+    background: #eee; 
+}
+td:before {
+    position: absolute;
+    top: 6px;
+    left: 5%;
+    width: 45%; 
+    white-space: nowrap;               
+}
+
+td:nth-of-type(1):before { content: "Fecha"; }
+td:nth-of-type(2):before { content: "Hora"; }
+td:nth-of-type(3):before { content: "Local"; }
+td:nth-of-type(4):before { content: "Visitante"; }
+td:nth-of-type(5):before { content: "Arbitro"; }
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.dropbtn {
+    background-color: #08436B;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #06314e;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    z-index: 4;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    font-size: medium;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
